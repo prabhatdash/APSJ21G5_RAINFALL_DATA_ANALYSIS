@@ -10,7 +10,7 @@ total_rainfall=df['ANNUAL'].sum()
 val=df[df['ANNUAL']==max_rainfall]
 for i in val['SUBDIVISION']:
     print(i)
-
+#--
 val=df[df['ANNUAL']==min_rainfall]
 for i in val['SUBDIVISION']:
     print(i)
