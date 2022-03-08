@@ -9,7 +9,10 @@ if auth.auth_user(email)==1:
     inp_otp=input()
     if rcv_otp == inp_otp:
         print("VALIDATION SUCCESSFUL")
-        dashboard.main_sa()
+        dashboard.dashboard()
     else:
         print("INVALID OTP")
         exit()
+else:
+    print("USER NOT REGISTERED. PLEASE SEND AN EMAIL TO group6@apsjorhat.org TO REGISTER")
+    exit()
